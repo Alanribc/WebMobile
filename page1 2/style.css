@@ -1,0 +1,435 @@
+.ul1 {
+    align-items: center;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.ul1 li {
+    padding: 5px;
+    list-style-type: none;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.ul1 li:hover {
+    background-color: rgb(226, 220, 220);
+    border-radius: 5px;
+    box-shadow: 10px 10px 20px rgba(59, 52, 52);
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    box-shadow: 5px 5px 20px rgb(59, 52, 52);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+img {
+    width: 5%;
+    height: 5%;
+    padding: 0;
+    margin: 0;
+}
+
+section {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 10px;
+    margin-top: 100px;
+    scroll-margin-top: 200px;
+}
+
+article {
+    width: 80%;
+    background-color: rgb(218, 165, 32);
+    margin: 10px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 20px rgb(72, 72, 71);
+    flex-direction: row;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+button{
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(170, 170, 168);
+    text-decoration: none;
+}
+
+#artigo1 {
+    margin-top: 50px;
+}
+
+#artigo1 img {
+    margin: 5px;
+    padding: 20px;
+    width: 200px;
+    height: 200px;
+}
+
+.texto {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+.texto p {
+    padding: 0;
+    margin-bottom: 2px;
+}
+
+#ultimop {
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+}
+
+#artigo2 img {
+    margin: 5px;
+    padding: 20px;
+    width: 200px;
+    height: 200px;
+}
+
+#artigo2 p {
+    padding-right: 20px;
+}
+
+
+#artigo3 img {
+    margin: 5px;
+    padding: 20px;
+    width: 200px;
+    height: 200px;
+}
+
+#artigo3 p {
+    padding-right: 20px;
+}
+
+#artigo4 img {
+    margin: 5px;
+    padding: 20px;
+    width: 200px;
+    height: 200px;
+}
+
+#artigo5 img {
+    margin: 5px;
+    padding: 20px;
+    width: 200px;
+    height: 200px;
+}
+
+#artigo5 p {
+    padding-right: 20px;
+}
+
+#artigo5 p {
+    padding-right: 20px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+    transition: background 0.2s linear;
+}
+
+body.dark{
+    background: #292c35;
+}
+
+body.dark article{
+    background-color:rgb(59, 52, 52);
+    box-shadow: 3px 3px 20px rgb(179, 172, 172);
+    color: white;
+}
+
+body.dark header{
+    background-color: #685405;
+}
+
+body.dark a{
+    color: white;
+}
+
+footer {
+    background-color: rgb(101, 96, 96);
+    position: absolute;
+    width: 100%;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 5px 5px 20px rgb(59, 52, 52);
+}
+
+footer p {
+    padding-left: 10px;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: Avantgarde, sans-serif;
+    padding: 10px;
+}
+
+p {
+    font-family: Avantgarde, sans-serif;
+}
+
+.ul2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.ul2 li {
+    font-family: Avantgarde, sans-serif;
+}
+
+.ul3 {
+    display: flex;
+    flex-direction: column;
+}
+
+.ul3 li {
+    font-family: Avantgarde, sans-serif;
+}
+
+.mostrar-mais {
+    color: #007bff;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.expanded {
+    max-height: none;
+    padding-bottom: 10px;
+    transition: max-height 0.3s ease-in-out;
+}
+
+.hidden {
+    display: none;
+}
+
+p {
+    transition: max-height 0.3s ease-in-out;
+}
+
+.botao{
+    margin: 0;
+    padding: 0;
+    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+}
+
+.checkbox{
+    opacity: 0;
+    position: absolute;
+}
+
+.label{
+    background-color: #111;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 5px;
+    position: relative;
+    height: 26px;
+    width: 50px;
+    
+    transform: scale(0.8);
+}
+
+.label .ball{
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    height: 30px;
+    width: 30px;
+
+    translate: translateX(0px);
+    transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball{
+    transform: translate(24px);
+}
+
+.fa-moon{
+    color: #f1c40f;
+}
+
+.fa-sun{
+    color: #f39c12;
+}
+
+#botaoTopo {
+    display: none;
+    position: fixed;
+    bottom: 40px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+#botaoTopo:hover {
+    background-color: #555;
+}
+
+
+@media (max-width: 768px) {
+    img {
+        width: 50px;
+        height: 50px;
+    }
+    article {
+        padding: 3%;
+    }
+    #artigo1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+    }
+    #artigo2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+    }
+    #artigo3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+    }
+    #artigo4 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+    }
+    #artigo5 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+    }
+    .ul1 {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+    }
+    .ul1 li {
+        list-style-type: none;
+        transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    }
+    a {
+        text-decoration: none;
+        color: black;
+    }
+    #artigo1 img {
+        margin: 5px;
+        padding: 20px;
+        width: 80%;
+        height: 20%;
+    }
+    #artigo2 img {
+        margin: 5px;
+        padding: 20px;
+        width: 80%;
+        height: 20%;
+    }
+    #artigo3 img {
+        margin: 5px;
+        padding: 20px;
+        width: 80%;
+        height: 20%;
+    }
+    #artigo4 img {
+        margin: 5px;
+        padding: 20px;
+        width: 80%;
+        height: 20%;
+    }
+    #artigo5 img {
+        margin: 5px;
+        padding: 20px;
+        width: 80%;
+        height: 20%;
+    }
+
+    #botaoTopo {
+        bottom: 30px;
+        right: 20px;
+        padding: 12px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 390px) {
+    img {
+        width: 20%;
+        height: 20%;
+        margin-top: 5%;
+    }
+    .ul1 li a {
+        font-size: 100%;
+    }
+    .ul1 {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+    
+    #botaoTopo {
+        bottom: 20px;
+        right: 15px;
+        padding: 10px;
+        font-size: 14px;
+    }
+}
